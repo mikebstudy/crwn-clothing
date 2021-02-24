@@ -4,7 +4,7 @@ Project site for Complete React Developer Course
 
 ### Setup/Build operations throughout course compiled into one spot
 
-Setup branch
+A01.Setup: Run npx create-react-app, then start Readme
 
 - Add repo to GitHub
 - Create folder for project ie `crwn-clothing`
@@ -15,3 +15,6 @@ Setup branch
 - `npx create-react-app .` (to create in current folder)
     + when done in this sequence, there is no extra git commit created by npx
 
+A01.Setup: Add sass
+
+- `yarn add node-sass`
