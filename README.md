@@ -61,3 +61,4 @@ Branch renaming
 ### Start Building App
 
 L065a-HelloWorld: Clean and setup initial Hello World state
+- (ME: Hello World seems like a simple starting state to confirm setup is working) 
