@@ -83,3 +83,7 @@ L069b.HomePageComponents: Refactor HomePage into Directory and MenuItem componen
 - (MB: Static-like html is refactored into components and the location of data is determined.)
 - (MB: The lowest level, MenuItem, is built first and will only contain props passed in. It is created as a const function with arrow sytax. Destructuring of the props is used for coding simplicity.)
 - (MB: Next lowest level, Directory, is built to handle the array of MenuItem data. State is used (and hardcoded with values needed that were set in the original static-like html.) The .map function is used on the array in the state to build the MenuItem tags.)
+
+L069c.MenuItemImage: Add backgroundImage to MenuItem and size dynamically
+- (MB: The `style` attribute can be used to add a background image. The `backgroundImage` in the `style` attribute can be set to a js template allowing the image to be setup dynamically by the caller based on a props value. Template is `url(${imageUrl})` and establishes a url call to a dynamic value setup as the image via `imageUrl`. Final code: `style={{backgroundImage: `url(${imageUrl})`}}`)
+- (MB: The `className` attribute can be calculated dynamically using a js template. A `size` CSS class can be added to rendering as `${size} menu-item`. If the value of `size` is null, nothing is rendered. Final code: `classNam={`${size} menu-item`}` )
