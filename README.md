@@ -79,4 +79,7 @@ L065b.HomePage: Add HomePage basic layout - built without props or state
 
 L069a.DirectoryStructure: Add directory structure and move components into it
 
-
+L069b.HomePageComponents: Refactor HomePage into Directory and MenuItem components
+- (MB: Static-like html is refactored into components and the location of data is determined.)
+- (MB: The lowest level, MenuItem, is built first and will only contain props passed in. It is created as a const function with arrow sytax. Destructuring of the props is used for coding simplicity.)
+- (MB: Next lowest level, Directory, is built to handle the array of MenuItem data. State is used (and hardcoded with values needed that were set in the original static-like html.) The .map function is used on the array in the state to build the MenuItem tags.)
