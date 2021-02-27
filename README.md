@@ -60,5 +60,10 @@ Branch renaming
 
 ### Start Building App
 
-L065a-HelloWorld: Clean and setup initial Hello World state
-- (ME: Hello World seems like a simple starting state to confirm setup is working) 
+L065a.HelloWorld: Clean and setup initial Hello World state
+- (MB: Hello World seems like a simple starting state to confirm setup is working) 
+
+L065b.HomePage: Add HomePage basic layout - built without props or state
+- (MB: The starting point here is identifying the components and the component structure, without thinking about props or state. It's almost like creating a static html page for layout and control heirarchy.)
+- (MB: It's like a pre-step for [Thinking in React: Step 1](https://reactjs.org/docs/thinking-in-react.html#step-1-break-the-ui-into-a-component-hierarchy). That article urges the  [single responsibility principle](https://en.wikipedia.org/wiki/Single-responsibility_principle).)
+
