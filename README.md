@@ -44,10 +44,21 @@ New branch for a lesson xx given a brief name - only done once so that each bran
 - (Then do the git status, add, commit sequence to finalize)
 - `git push origin L0XX-name` to push the branch to Github
 
-Merge branch backinto main and commit to Github
+Merge branch back into main and commit to Github
 
 - `git checkout main` (goes back to main)
 - `git merge --no-ff L0XX-name` (does merge into main that was just checked out)
 - `git push origin main` to push the merged main to Github
 
+Branch renaming
 
+- When in (checked out) the branch: `git branch -m <new-branch-name>`
+- When not in the branch: `git branch -m <branch-name> <new-branch-name>`
+- To sync the remote to the new names, you have to push the `new-branch-name` and delete the `branch-name` **NOT TESTED YET**
+    + `git push origin -u <new-branch-name>` (u resets the upstream branch)
+    + `git push origin -d <branch-name>` (or -delete)
+
+### Start Building App
+
+L065a-HelloWorld: Clean and setup initial Hello World state
+- (ME: Hello World seems like a simple starting state to confirm setup is working) 
