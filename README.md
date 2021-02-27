@@ -34,6 +34,16 @@ Setup for github
         + git remote remove origin (to get rid of an origin and url)
 - `git push origin main`
 
+...A02.Git: Add SSH commands for github 
+
+SSH commands for github access - needed once per Bash session 
+
+- `eval $(ssh-agent -s)`
+- `ssh-add ~/.ssh/id_rsa_mikebstudy`
+- `ssh -T git@github.com`
+
+...A02.Git(end)
+
 New branch for a lesson xx given a brief name - only done once so that each branch is a snapshot of the work/state of the repo
 
 - `git checkout -b L0XX-name` (i think it takes the current setting of the * as the starting point)
