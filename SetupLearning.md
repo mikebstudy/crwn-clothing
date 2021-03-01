@@ -1,5 +1,7 @@
 # SetupLearning
 
+### Intention
+
 - Intended to capture the setup for the project to use as a starting point for another project or experimental copies of this project
 - Realized it might be possible by creating a main.setup branch with this in it
     + Still need to prove out the concept
