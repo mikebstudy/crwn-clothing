@@ -36,6 +36,10 @@ SSH commands for github access - needed once per Bash session
 - `ssh-add ~/.ssh/id_rsa_mikebstudy`
 - `ssh -T git@github.com`
 
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa_mikebstudy
+ssh -T git@github.com
+
 ...A02.Git(end)
 
 New branch for a lesson xx given a brief name - only done once so that each branch is a snapshot of the work/state of the repo
@@ -61,4 +65,10 @@ Branch renaming
 - To sync the remote to the new names, you have to push the `new-branch-name` and delete the `branch-name` **NOT TESTED YET**
     + `git push origin -u <new-branch-name>` (u resets the upstream branch)
     + `git push origin -d <branch-name>` (or -delete)
+
+Branch deleting
+
+- Delete branch locally (cannot be on branch): git branch -d localBranchName
+- Delete branch locally, if not merged or pushed (forces delete) (cannot be on branch): git branch -D localBranchName
+- Delete branch remotely: git push origin --delete remoteBranchName
 
