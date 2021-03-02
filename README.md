@@ -43,6 +43,21 @@ Also, added the new Setup and HelloWorld files into appropriate main.subproject 
 - [ ] Also, discovered main.HelloWorld log1 shows more than desired. How to fix?
 *********************************************************************************
 
-
+### L070.MenuItemStyling: Style content box, opacity, fonts, expanding image, hover effect
+- Add white background for content box
+    + In menu-item.sytles.scss in .content section
+    + Add background-color: white;
+    + Add opacity: 0.7;
+- Setup of Google fonts (Open Sans Condensed)
+    + Done in main.setup and merged into L070
+    + Added reference to the following to App.css 
+        * body { font-family: font-family: 'Open Sans Condensed'; }
+    + Note, google recommended: font-family: 'Open Sans Condensed', sans-serif;
+- To make h1 titles all uppercase, a javascript function can be used
+    + This: <h1 className="title">{title}</h1>
+    + Becomes: <h1 className="title">{title.toUpperCase()}</h1>
+- Hover effect that increases size of image and Transistion of opacity of content box
+    + Very complicated - go back an relisten for detail around 2.5 min
+    + Copied final version of lesson 3
 
 STOPPED AT L070

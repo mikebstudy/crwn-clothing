@@ -27,3 +27,19 @@ A01.Setup: Add sass
 
 - Create and start SetupLearning.md
 - Rename A01.Setup to main.Setup
+<<<<<<< HEAD
+=======
+
+### Add Google Fonts - Open Sans Condensed
+
+- Google fonts link added to public/index.html
+    + <link rel="preconnect" href="https://fonts.gstatic.com">
+    + <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    + CSS rules: font-family: 'Open Sans Condensed', sans-serif;
+- However, a local copy also kept and not used, so that experimental versions could use local copy
+- Downloaded Open_Sans_Condensed.zip to have a local copy of the fonts
+- Added OpenSansCondensed (-Bold,-Light,-LightItalic) fonts to public/GoogleFonts
+
+
+
+>>>>>>> main.Setup
