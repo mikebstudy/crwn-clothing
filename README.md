@@ -37,6 +37,10 @@ REFACTOR.01 Refactored README.md into separate Setup, Git, Hello World md files
 - *(Setup section moved to SetupLearning.md to track and work on as separate subproject)*
 - *(Git section moved to GitLearning.md to track and work on as a separate subproject)*
 - *(L065a.HelloWorld renamed main.HelloWorld to track and work on as a separate subproject)*
+
+Also, refactored branches as needed into main.subproject branches
+Also, added the new Setup and HelloWorld files into appropriate main.subproject branches
+- [ ] Also, discovered main.HelloWorld log1 shows more than desired. How to fix?
 *********************************************************************************
 
 
