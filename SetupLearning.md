@@ -38,5 +38,9 @@ A01.Setup: Add sass
 - Downloaded Open_Sans_Condensed.zip to have a local copy of the fonts
 - Added OpenSansCondensed (-Bold,-Light,-LightItalic) fonts to public/GoogleFonts
 
+### Update Packages - See L073
 
+- L073: Updating Packages + Lastest Version of React
+    + Explains how to do the update
+    + [ ] Watch and extract info sometimes
 
