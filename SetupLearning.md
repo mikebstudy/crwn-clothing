@@ -27,8 +27,6 @@ A01.Setup: Add sass
 
 - Create and start SetupLearning.md
 - Rename A01.Setup to main.Setup
-<<<<<<< HEAD
-=======
 
 ### Add Google Fonts - Open Sans Condensed
 
@@ -52,4 +50,3 @@ A01.Setup: Add sass
     + Explains various files, structure and modules
     + Also explains update issue solved with resolution (or resolve) attribute in package.json (I think)
 
->>>>>>> main.Setup
