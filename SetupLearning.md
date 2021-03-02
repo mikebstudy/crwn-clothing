@@ -44,3 +44,9 @@ A01.Setup: Add sass
     + Explains how to do the update
     + [ ] Watch and extract info sometimes
 
+### Resolve Package update issue - See L066
+
+- L066: Project Files + Modules
+    + Explains various files, structure and modules
+    + Also explains update issue solved with resolution (or resolve) attribute in package.json (I think)
+
