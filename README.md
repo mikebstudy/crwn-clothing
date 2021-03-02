@@ -43,6 +43,15 @@ Also, added the new Setup and HelloWorld files into appropriate main.subproject 
 - [ ] Also, discovered main.HelloWorld log1 shows more than desired. How to fix?
 *********************************************************************************
 
+### L070.MenuItemStyling: 
+- Add white background for content box
+    + In menu-item.sytles.scss in .content section
+    + Add background-color: white;
+    + Add opacity: 0.7;
+- Setup of Google fonts
+    + 
+- Hover effect that increases size of image
+- Transistion of opacity of content box
 
 
 STOPPED AT L070
