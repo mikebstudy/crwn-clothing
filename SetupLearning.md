@@ -48,9 +48,17 @@ A01.Setup: Add sass
 
 - L066: Project Files + Modules
     + Explains various files, structure and modules
-    + Also explains update issue solved with resolution (or resolve) attribute in package.json (I think)
+    + May also explains update issue solved with "resolution" attribute or something like that
+        * See L075, if not in L066.
 
 ### Add react-router-dom
 
 - L075: Routing In Our Project
 - yarn add react-router-dom
+
+### Resolve Package update issue - See L075
+
+- example of babel.jest being incompatible
+- added "resolutions" property in package.json 
+    + to force the package used to always be what is needed, older version forced to make it work
+    + "resolutions": { "babel-jest": "24.7.15}
