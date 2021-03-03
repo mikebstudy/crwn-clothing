@@ -76,6 +76,17 @@ Merge branch back into main and commit to Github
 - Delete branch locally, if not merged or pushed (forces delete) (cannot be on branch): git branch -D localBranchName
 - Delete branch remotely: git push origin --delete remoteBranchName
 
+### Interrupting current work to work in another branch 
+
+- Assume working in main
+- git stash push (puts all files into a stash area and clears the branch)
+- checkout/edit/commit other branch and commit (such as main.Setup for install of new stuff)
+- git checkout main (ie beck to branch originally being worked in)
+- (git merge --no-ff OtherBranch)
+- git push origin main
+- git push origin OtherBranch (not sure if this push sequence is best practice)
+- git stash pop (puts all files back into branch from stash area and clears the stash of the entry)
+- Resume work in main
 
 ## (From Original README.md)
 
