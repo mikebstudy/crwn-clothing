@@ -15,4 +15,12 @@ L065a.HelloWorld: Clean and setup initial Hello World state
 
 - Rename of L065a.HelloWorld to main.HelloWorld
 
+### Update to use Google fonts
+
+- main.Setup merged into main.HelloWorld
+    - changed index.html 
+    - added Google fonts
+    - other files updated too
+- App.css changed to use Google Fonts
+- index.html browser tab changed to read 'Crown Clothing - Hello World'
 
