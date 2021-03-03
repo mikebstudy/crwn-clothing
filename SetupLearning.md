@@ -62,3 +62,6 @@ A01.Setup: Add sass
 - added "resolutions" property in package.json 
     + to force the package used to always be what is needed, older version forced to make it work
     + "resolutions": { "babel-jest": "24.7.15}
+
+### Update App.css to use Google Fonts (previous oversight)
+
