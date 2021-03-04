@@ -44,6 +44,7 @@ Also, added the new Setup and HelloWorld files into appropriate main.subproject 
 *********************************************************************************
 
 ### L070.MenuItemStyling: Style content box, opacity, fonts, expanding image, hover effect
+
 - Add white background for content box
     + In menu-item.sytles.scss in .content section
     + Add background-color: white;
@@ -60,4 +61,5 @@ Also, added the new Setup and HelloWorld files into appropriate main.subproject 
     + Very complicated - go back an relisten for detail around 2.5 min
     + Copied final version of lesson 3
 
-STOPPED AT L070
+### L075.AddRouting: 
+

@@ -15,6 +15,8 @@
     + So it was not a viable approach
     + A little later, conceived the idea of making main.<SubProject> branches for keeping subprojects independent
 
+## Common commands and situations
+
 ### Setup for github
 
 - `git remote -v`
@@ -88,3 +90,39 @@ Merge branch back into main and commit to Github
 - git stash pop (puts all files back into branch from stash area and clears the stash of the entry)
 - Resume work in main
 
+## Research
+
+### How is the branch node point determined?
+
+- https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
+    + The branch is a pointer to the same commit you're currently on
+    + See Creating a New Branch
+
+### Viewing long log files
+
+- PageUp, PageDown, ArrowUp, ArrowDown
+- q to exit
+
+### git difftool
+
+DO NOT USE - could not find a way to exit screen
+Instead use vscode diff function
+
+### git rm
+
+- removes files
+    + but so far do not see a way to remove a file from a branch and still leave it in the system
+        * this is because git rm removes and deletes the file out of the working directory on the next commit
+            - so it would be a distructive test to try removing in one place in a branch and only have it actually removed from the whole system, because it does a remove from the working directory
+            - it might be worth a try to see if it just drops it in one branch but leaves it elsewhere
+                + the way git works seems that is should actually work because of its snapshot system
+
+### Changing a comment or the file set that was committed
+
+- if a commit has just been done, the comment and files can be changed
+    + use git commit --amend
+    + warning. be very careful. not known what happens if intervening things are done
+
+### HEAD notes
+
+- pointer to the current branch node
