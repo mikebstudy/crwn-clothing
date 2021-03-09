@@ -16,3 +16,16 @@
 - Added access to props.match.params.topicId into <TopicDetailPage>
 - Added <Link> to <HomePage> to nav to Topics in direct fashion using 'to' attribute
 - Added <Button> to <HomePage> to nav to Topics in a dynamic fashion using 'onClick' attribute
+
+### L076c.NavToDynamicallyMatchedPath: Added Link using string match `${props.match.url/Id}` so prior part of url does not matter, just the path/:id part at the end. Allows multiple initial paths to nav to same location
+
+- Added Links to TopicsListPage
+      <Link to={`${props.match.url}/13`}>TO TOPIC 13</Link>
+      <Link to={`${props.match.url}/17`}>TO TOPIC 17</Link>
+      <Link to={`${props.match.url}/21`}>TO TOPIC 21</Link>
+- Changed App paths in topics and topics/:id to other paths to prove Links did not care about actual url path prior to topics/:id. So this topics page can be used anywhere in the site if matching prior part is provided (as in this example)
+      <Route exact path='/blog/asdqw/topics' component={TopicsList} />
+      <Route path='/blog/asdqw/topics/:topicId' component={TopicDetail} />
+      <Route exact path='/blog/topics' component={TopicsList} />
+      <Route path='/blog/topics/:topicId' component={TopicDetail} />
+
