@@ -131,5 +131,7 @@ Instead use vscode diff function
 
 - pointer to the current branch node that is the object of current staging and committing
 
+### use --name-only
 
+- used to print out list of changed files within a commit when using git log
 
