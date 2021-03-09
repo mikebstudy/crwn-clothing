@@ -7,6 +7,8 @@ const HomePage = props => {
   console.log(props);
   return (
     <div>
+      <Link to="/topics">Topics (Direct 'path' Link using 'to')</Link><br />
+      <button onClick={() => props.history.push('/topics')}>Topics (Button 'path' using history.push 'path' using onClick</button>
       <h1>HOME PAGE</h1>
     </div>
   );
@@ -23,7 +25,7 @@ const TopicsList = props => {
 const TopicDetail = props => {
   return (
     <div>
-      <h1>TOPIC DETAIL PAGE:</h1>
+      <h1>TOPIC DETAIL PAGE: {props.match.params.topicId}</h1>
     </div>
   );
 };
