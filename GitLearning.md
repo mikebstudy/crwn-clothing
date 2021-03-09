@@ -32,16 +32,18 @@
 - `ssh-add ~/.ssh/id_rsa_mikebstudy`
 - `ssh -T git@github.com`
 
+```
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/id_rsa_mikebstudy
 ssh -T git@github.com
+```
 
 ### Create new working branch for a lesson snapshot
 
 New branch for a Lecture XX given a BriefNname - only done once so that each branch is a snapshot of the work/state of the repo
 
-- `git checkout -b L0XX-BriefName` (i think it takes the current setting of the * as the starting point)
-- ? `git checkout -b L0XX-BriefName main` (may be needed to cause L0XX-name to start as though it was main or could be safe guard to insure starting point if from main and not somewhere else accidently)
+- `git checkout -b L0XX-BriefName` (it takes the current setting of the * as the starting point - ie the branch comes of the current node known as *)
+- [ ] Does it work? - `git checkout -b L0XX-BriefName main` (may be needed to cause L0XX-name to start as though it was main or could be safe guard to insure starting point if from main and not somewhere else accidently)
 - (Do the changes)
 - (Make sure Readme and notes are all updated)
 - (Readme should be updated with branch name and commit note)
@@ -52,9 +54,10 @@ Merge branch back into main and commit to Github
 
 - `git checkout main` (goes back to main)
 - `git merge --no-ff L0XX-BriefName` (does merge into main that was just checked out)
+    + [ ] Learn when to use --ff (default) and --no-ff
 - `git push origin main` to push the merged main to Github
 
-### Create snapshot branch of main when work not started on a branch
+### Create snapshot branch of main when work accidentally not started on a branch
 
 - `git branch main`
 - (Readme should be updated with branch name and commit note)
@@ -116,6 +119,7 @@ Instead use vscode diff function
             - so it would be a distructive test to try removing in one place in a branch and only have it actually removed from the whole system, because it does a remove from the working directory
             - it might be worth a try to see if it just drops it in one branch but leaves it elsewhere
                 + the way git works seems that is should actually work because of its snapshot system
+                + IT DID WORK
 
 ### Changing a comment or the file set that was committed
 
@@ -125,4 +129,7 @@ Instead use vscode diff function
 
 ### HEAD notes
 
-- pointer to the current branch node
+- pointer to the current branch node that is the object of current staging and committing
+
+
+

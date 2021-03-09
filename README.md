@@ -1,4 +1,4 @@
-# Crown Clothing E-Commerce Project Site
+tt# Crown Clothing E-Commerce Project Site
 
 Project site for Complete React Developer Course
 
@@ -31,7 +31,7 @@ Project site for Complete React Developer Course
 - (MB: The `style` attribute can be used to add a background image. The `backgroundImage` in the `style` attribute can be set to a js template allowing the image to be setup dynamically by the caller based on a props value. Template is `url(${imageUrl})` and establishes a url call to a dynamic value setup as the image via `imageUrl`. Final code: `style={{backgroundImage: `url(${imageUrl})`}}`)
 - (MB: The `className` attribute can be calculated dynamically using a js template. A `size` CSS class can be added to rendering as `${size} menu-item`. If the value of `size` is null, nothing is rendered. Final code: `classNam={`${size} menu-item`}` )
 
-*********************************************************************************
+......................
 REFACTOR.01 Refactored README.md into separate Setup, Git, Hello World md files
 
 - *(Setup section moved to SetupLearning.md to track and work on as separate subproject)*
@@ -41,7 +41,7 @@ REFACTOR.01 Refactored README.md into separate Setup, Git, Hello World md files
 Also, refactored branches as needed into main.subproject branches
 Also, added the new Setup and HelloWorld files into appropriate main.subproject branches
 - [ ] Also, discovered main.HelloWorld log1 shows more than desired. How to fix?
-*********************************************************************************
+.......................
 
 ### L070.MenuItemStyling: Style content box, opacity, fonts, expanding image, hover effect
 
@@ -61,5 +61,18 @@ Also, added the new Setup and HelloWorld files into appropriate main.subproject 
     + Very complicated - go back an relisten for detail around 2.5 min
     + Copied final version of lesson 3
 
-### L075.AddRouting: 
+### L075.AddRouting: Add Switch and Route tags from react-router-dom and sample hats page in App
 
+- react-router-dom added through main.Setup branch
+- In index.js nest <App> inside <BrowserRouter> (from react-router-dom)
+- In App.js, routing setup
+    - Add Route from react-router-dom
+    - Add sample const HatsPage function for testing
+    - Use Route tag to point to HomePage with path='/'
+    - Add Route tag to point to HatsPage with path='/hats'
+    - Tested
+- In Appjs, switch control of routing setup
+    - Add <Switch> from react-router-dom
+    - Nest the <Route> tags within the <Switch> tag
+
+    
