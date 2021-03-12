@@ -75,4 +75,9 @@ Also, added the new Setup and HelloWorld files into appropriate main.subproject 
     - Add <Switch> from react-router-dom
     - Nest the <Route> tags within the <Switch> tag
 
-    
+### L076: Add main.RouterSample to capture explination example of Routing 
+
+- Created main.RouterSample branch from main.Setup
+- Coded along in L076 and created some commits 
+
+
