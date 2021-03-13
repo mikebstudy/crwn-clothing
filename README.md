@@ -82,48 +82,18 @@ Also, added the new Setup and HelloWorld files into appropriate main.subproject 
 
 ### L077.MenuItemNavLinks: Use withRouter and Routing Props to create Nav Links in MenuItem
 
-- <Route> only passes the routing props into the child component in the component attribute
-    + So the routing props are not available beyond that child if not explicitly passed down through other child components
-        * Some of which will have no interest
-        * Pattern called prop drilling and considered a bad pattern
-- withRouter component offers a alternate solution to the prop drilling approach
-    + Is a first order component, so it can be made an enclouser for any component
-        * Thus making the routing props available at any level 
-        * Is a function that takes a component as an argument and returns a modified version of that component that provides the routing props
-    + ex. export default withRouter(MenuItem); to wrap it 
 - Adding withRouter to MenuItem logic
-- Added linkUrl to 'section' state data which exists in Directory component
+- Added `linkUrl` to 'section' state data which exists in Directory component
     + Directory component is what calls MenuItem
-- In MenuItem, started to add `onClick={() => history.push()}`
-- Also modified code to use a spread parameter to pass in all the 'section' state data as a single argument rather than name value pairs from the 'section' state
-    + This is simplification based on the observation that all the values passed into MenuItem have the same name,value pairs as exists in the 'section' state array entries
-    + So, this:
-```    
-            this.state.sections.map(({ title, imageUrl, id, size }) => (
-                <MenuItem key={id} title={title} imageUrl={imageUrl} size={size} />
-```    
-    + Becomes:
+- In MenuItem, started to add `onClick={() => history.push()}` to setup Nav Link 
+- Modified Directory coomponent code to use a spread parameter to pass in all the 'section' state data as a single argument rather than name value pairs from the 'section' state. This results in passing in the `linkUrl` for use in MenuItem
 ```
-            this.state.sections.map(({ id, ...otherSectionProps }) => (
-                <MenuItem key={id} {...otherSectionProps} />
-```
-    + Due to the json data looking like this:
-```
-        [    {
-                title: 'mens',
-                imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
-                size: 'large',
-                id: 5,
-                linkUrl: 'shop/mens'
-            }, 
-            ...
-        ]
+    this.state.sections.map(({ id, ...otherSectionProps }) => (
+        <MenuItem key={id} {...otherSectionProps} />
 ```
 - Continuing in MenuItem, the onClick is modified to provide a location path to go to the proper page
     + onClick={() => history.push(`${match.url}${linkUrl}`)}
-        * The `match.url` provides all the leading url part to get to the proper place in the url hierarchy
-        * The linkUrl is the actual path part to be matched
-        * So this is an example of having a component that is rendering a url that is independent of its location in the url path structure.
-        * ie /someMatchedUrl/linkUrl
-    
+    + This approach allows the /someMatechedURL/linkUrl to have any value for /someMatchedUrl determined by logic elsewhere. Can even be dynamic
+
+
     
