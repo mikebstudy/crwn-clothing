@@ -106,3 +106,12 @@ Also, added the new Setup and HelloWorld files into appropriate main.subproject 
 - Tested: localhost:3000/shop shows SHOP PAGE
 
 ### L080b.StartCollectionPreviewItem: Setup of CollectionPreview, Use in ShopPage, Pass shop data and display
+
+- Add CollectionPreview in components/collection-preview/collection-preview.component.jsx
+    - Add collection-preview.styles.scss
+    - Setup basic static structure for output
+- Setup CollectionPreview to use props { title, items}
+- On items.map just output `item.name` in div within basic structure
+- Use in ShopPage
+    - Destructure state to obtain collections
+    - collections.map to call CollectionsPreview
