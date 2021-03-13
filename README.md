@@ -95,7 +95,7 @@ Also, added the new Setup and HelloWorld files into appropriate main.subproject 
     + onClick={() => history.push(`${match.url}${linkUrl}`)}
     + This approach allows the /someMatechedURL/linkUrl to have any value for /someMatchedUrl determined by logic elsewhere. Can even be dynamic
 
-### L080a:StartShopPage: Initial setup of ShopPage, test data and routing
+### L080a.StartShopPage: Initial setup of ShopPage, test data and routing
 
 - Add ShopPage in pages/shop/shop.component.jsx
     - simple class page to start
@@ -105,3 +105,4 @@ Also, added the new Setup and HelloWorld files into appropriate main.subproject 
 - Deleted HatsPage because only used for demo purposes before
 - Tested: localhost:3000/shop shows SHOP PAGE
 
+### L080b.StartCollectionPreviewItem: Setup of CollectionPreview, Use in ShopPage, Pass shop data and display
