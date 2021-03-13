@@ -1,4 +1,4 @@
-tt# Crown Clothing E-Commerce Project Site
+# Crown Clothing E-Commerce Project Site
 
 Project site for Complete React Developer Course
 
@@ -95,5 +95,13 @@ Also, added the new Setup and HelloWorld files into appropriate main.subproject 
     + onClick={() => history.push(`${match.url}${linkUrl}`)}
     + This approach allows the /someMatechedURL/linkUrl to have any value for /someMatchedUrl determined by logic elsewhere. Can even be dynamic
 
+### L080a:StartShopPage: Initial setup of ShopPage, test data and routing
 
-    
+- Add ShopPage in pages/shop/shop.component.jsx
+    - simple class page to start
+- Add SHOP_DATA in pages/shops/shop.data.js
+    - SHOP_DATA added as part of state for ShopPage
+- App.js updated to refer to ShopPage with path='/shop'
+- Deleted HatsPage because only used for demo purposes before
+- Tested: localhost:3000/shop shows SHOP PAGE
+
