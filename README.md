@@ -115,3 +115,7 @@ Also, added the new Setup and HelloWorld files into appropriate main.subproject 
 - Use in ShopPage
     - Destructure state to obtain collections
     - collections.map to call CollectionsPreview
+
+### L080c.FilterCollectionPreviewItem: Reduce output to 4 items using .filter
+
+- Added .filter((item,idx) => idx < 4) to reduce to 4 items
